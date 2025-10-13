@@ -32,7 +32,7 @@ jobs:
           sudo apt-get install -y libomp-dev zlib1g-dev libjpeg-turbo8-dev
 
       - name: Build wheels
-        uses: pypa/cibuildwheel@7c619efba910c04005a835b110b057fc28fd6e93 # v3.2.0
+        uses: pypa/cibuildwheel@9c00cb4f6b517705a3794b22395aedc36257242c # v3.2.1
         env:
           # ---------- macOS: install libomp; compile & repair with macOS 15 target ----------
           CIBW_BEFORE_ALL_MACOS: |
